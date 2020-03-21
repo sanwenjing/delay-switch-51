@@ -7,3 +7,253 @@ D:\Program Files (x86)\单片机\51-1个独立按键控制LED\1个独立按键控制led.uv2
 Project File Date:  12/09/2011
 
 <h2>Output:</h2>
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(94): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(95): error C141: syntax error near '20'
+1个独立按键控制LED.C(96): error C141: syntax error near 'if'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(94): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(95): error C141: syntax error near '20'
+1个独立按键控制LED.C(96): error C141: syntax error near 'if'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C129: missing ';' before '=='
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C129: missing ';' before '=='
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C129: missing ';' before '=='
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(89): error C141: syntax error near '{'
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(92): error C141: syntax error near 'if'
+1个独立按键控制LED.C(92): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(98): error C141: syntax error near 'if'
+1个独立按键控制LED.C(98): error C141: syntax error near '==', expected ')'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(90): error C141: syntax error near '{', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(95): error C141: syntax error near '}'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(101): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(91): error C141: syntax error near 'DelayMs', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(96): error C141: syntax error near 'else'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(102): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+1个独立按键控制LED.C(91): error C141: syntax error near 'DelayMs', expected ';'
+1个独立按键控制LED.C(91): error C141: syntax error near '20'
+1个独立按键控制LED.C(96): error C141: syntax error near 'else'
+1个独立按键控制LED.C(96): error C141: syntax error near '==', expected ')'
+1个独立按键控制LED.C(97): error C141: syntax error near '20'
+1个独立按键控制LED.C(102): error C141: syntax error near '}'
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+1个独立按键控制LED.C(89): error C141: syntax error near '(', expected '='
+Target not created
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+linking...
+Program Size: data=10.0 xdata=0 code=313
+creating hex file from ".\obj\1个独立按键控制led"...
+".\obj\1个独立按键控制led" - 0 Error(s), 0 Warning(s).
+Build target 'Target 1'
+compiling 1个独立按键控制led.c...
+linking...
+Program Size: data=10.0 xdata=0 code=313
+creating hex file from ".\obj\1个独立按键控制led"...
+".\obj\1个独立按键控制led" - 0 Error(s), 0 Warning(s).

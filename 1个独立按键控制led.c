@@ -86,6 +86,19 @@ void OFF(){
 	DelayS(1);
 }
 
+check(){
+	if( KEY==1 ){
+		DelayMs(20);    //去抖
+		if( KEY==1 ) return 1;
+	 	
+	}
+	else if( KEY==0 ){
+		DelayMs(20);    //去抖
+		if( KEY==0 ) return 0;
+	 	
+	}
+}
+
 void main (void)
 {
                   
@@ -93,11 +106,11 @@ KEY=1; //按键输入端口电平置高
 while (1)         //主循环
   {
   	Rst_Watchdog();//喂狗
-  	if( KEY==0 && flag==0 )	{//按下按键时
+  	if( check()==0 && flag==0 )	{//按下按键时
 	ON();
 	}
 
-	if( KEY==1 && flag==1 )	{//放开按键时
+	if( check()==1 && flag==1 )	{//放开按键时
 	OFF();
 	}
 

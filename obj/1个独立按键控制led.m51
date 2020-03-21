@@ -1,4 +1,4 @@
-BL51 BANKED LINKER/LOCATER V5.03                                                        03/19/2020  16:06:09  PAGE 1
+BL51 BANKED LINKER/LOCATER V5.03                                                        03/21/2020  14:54:59  PAGE 1
 
 
 BL51 BANKED LINKER/LOCATER V5.03, INVOKED BY:
@@ -29,16 +29,17 @@ LINK MAP OF MODULE:  .\obj\1¸ö¶ÀÁ¢°´¼ü¿ØÖÆled (1_ö_ÀÁ___¼ü¿ØÖÆLED)
             * * * * * * *   C O D E   M E M O R Y   * * * * * * *
             CODE    0000H     0003H     ABSOLUTE     
             CODE    0003H     008CH     UNIT         ?C_C51STARTUP
-            CODE    008FH     001CH     UNIT         ?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00ABH     001CH     UNIT         ?PR?MAIN?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00C7H     0014H     UNIT         ?PR?_DELAYS?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00DBH     000BH     UNIT         ?PR?ON?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00E6H     000BH     UNIT         ?PR?OFF?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00F1H     000AH     UNIT         ?PR?SW1DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    00FBH     000AH     UNIT         ?PR?SW2DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    0105H     0004H     UNIT         ?PR?RST_WATCHDOG?1_ö_ÀÁ___¼ü¿ØÖÆLED
-            CODE    0109H     0004H     UNIT         ?C_INITSEG
-            CODE    010DH     0003H     UNIT         ?PR?_DELAYUS2X?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    008FH     0026H     UNIT         ?PR?MAIN?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    00B5H     001FH     UNIT         ?PR?CHECK?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    00D4H     001CH     UNIT         ?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    00F0H     0014H     UNIT         ?PR?_DELAYS?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    0104H     000BH     UNIT         ?PR?ON?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    010FH     000BH     UNIT         ?PR?OFF?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    011AH     000AH     UNIT         ?PR?SW1DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    0124H     000AH     UNIT         ?PR?SW2DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    012EH     0004H     UNIT         ?PR?RST_WATCHDOG?1_ö_ÀÁ___¼ü¿ØÖÆLED
+            CODE    0132H     0004H     UNIT         ?C_INITSEG
+            CODE    0136H     0003H     UNIT         ?PR?_DELAYUS2X?1_ö_ÀÁ___¼ü¿ØÖÆLED
 
 
 
@@ -54,14 +55,21 @@ SEGMENT
 
 ?PR?MAIN?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?RST_WATCHDOG?1_ö_ÀÁ___¼ü¿ØÖÆLED
+  +--> ?PR?CHECK?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?ON?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?OFF?1_ö_ÀÁ___¼ü¿ØÖÆLED
 
+BL51 BANKED LINKER/LOCATER V5.03                                                      03/21/2020  14:54:59  PAGE 2
+
+
+?PR?CHECK?1_ö_ÀÁ___¼ü¿ØÖÆLED
+  +--> ?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
+
+?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
+  +--> ?PR?_DELAYUS2X?1_ö_ÀÁ___¼ü¿ØÖÆLED
+
 ?PR?ON?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?SW1DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
-BL51 BANKED LINKER/LOCATER V5.03                                                      03/19/2020  16:06:09  PAGE 2
-
-
   +--> ?PR?_DELAYS?1_ö_ÀÁ___¼ü¿ØÖÆLED
 
 ?PR?SW1DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
@@ -70,9 +78,6 @@ SEGMENT
 ?PR?_DELAYS?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?RST_WATCHDOG?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
-
-?PR?_DELAYMS?1_ö_ÀÁ___¼ü¿ØÖÆLED
-  +--> ?PR?_DELAYUS2X?1_ö_ÀÁ___¼ü¿ØÖÆLED
 
 ?PR?OFF?1_ö_ÀÁ___¼ü¿ØÖÆLED
   +--> ?PR?SW2DELAY?1_ö_ÀÁ___¼ü¿ØÖÆLED
@@ -90,119 +95,132 @@ SYMBOL TABLE OF MODULE:  .\obj\1¸ö¶ÀÁ¢°´¼ü¿ØÖÆled (1_ö_ÀÁ___¼ü¿ØÖÆLED)
 
   -------         MODULE        1_ö_ÀÁ___¼ü¿ØÖÆLED
   C:0000H         SYMBOL        _ICE_DUMMY_
+  C:00B5H         PUBLIC        check
   D:0090H         PUBLIC        P1
   D:00A0H         PUBLIC        P2
   D:00B0H         PUBLIC        P3
   D:00A8H         PUBLIC        IE
-  C:0096H         PUBLIC        _DelayMs
+  C:00DBH         PUBLIC        _DelayMs
   D:00B8H         PUBLIC        IP
   D:0008H         PUBLIC        flag
-  C:00DBH         PUBLIC        ON
-  C:00C7H         PUBLIC        _DelayS
-  C:00ABH         PUBLIC        main
+  C:0104H         PUBLIC        ON
+  C:00F0H         PUBLIC        _DelayS
+  C:008FH         PUBLIC        main
   D:0098H         PUBLIC        SCON
   D:0088H         PUBLIC        TCON
-  C:010DH         PUBLIC        _DelayUs2x
-  C:0105H         PUBLIC        Rst_Watchdog
+  C:0136H         PUBLIC        _DelayUs2x
+  C:012EH         PUBLIC        Rst_Watchdog
   D:00E1H         PUBLIC        WDT_CONTR
-  C:00E6H         PUBLIC        OFF
+  C:010FH         PUBLIC        OFF
   B:00A0H.7       PUBLIC        SW1
   B:00A0H.6       PUBLIC        SW2
   D:00C8H         PUBLIC        T2CON
   B:00A0H.0       PUBLIC        KEY
-  C:00F1H         PUBLIC        Sw1Delay
-  C:00FBH         PUBLIC        Sw2Delay
+  C:011AH         PUBLIC        Sw1Delay
+  C:0124H         PUBLIC        Sw2Delay
   D:00D0H         PUBLIC        PSW
+BL51 BANKED LINKER/LOCATER V5.03                                                      03/21/2020  14:54:59  PAGE 3
+
+
   -------         PROC          RST_WATCHDOG
-  C:0105H         LINE#         18
-  C:0105H         LINE#         19
-  C:0105H         LINE#         20
-  C:0108H         LINE#         21
+  C:012EH         LINE#         17
+  C:012EH         LINE#         18
+  C:012EH         LINE#         19
+  C:0131H         LINE#         20
   -------         ENDPROC       RST_WATCHDOG
-BL51 BANKED LINKER/LOCATER V5.03                                                      03/19/2020  16:06:09  PAGE 3
-
-
   -------         PROC          _DELAYUS2X
   D:0007H         SYMBOL        t
-  C:010DH         LINE#         26
-  C:010DH         LINE#         27
-  C:010DH         LINE#         28
-  C:010FH         LINE#         29
+  C:0136H         LINE#         25
+  C:0136H         LINE#         26
+  C:0136H         LINE#         27
+  C:0138H         LINE#         28
   -------         ENDPROC       _DELAYUS2X
-  -------         PROC          L?0020
-  -------         ENDPROC       L?0020
+  -------         PROC          L?0026
+  -------         ENDPROC       L?0026
   -------         PROC          _DELAYMS
   D:0006H         SYMBOL        t
-  C:0096H         LINE#         35
-  C:0098H         LINE#         36
-  C:0098H         LINE#         38
-  C:009EH         LINE#         39
-  C:009EH         LINE#         41
-  C:00A3H         LINE#         42
-  C:00A8H         LINE#         43
-  C:00AAH         LINE#         44
+  C:00DBH         LINE#         34
+  C:00DDH         LINE#         35
+  C:00DDH         LINE#         37
+  C:00E3H         LINE#         38
+  C:00E3H         LINE#         40
+  C:00E8H         LINE#         41
+  C:00EDH         LINE#         42
+  C:00EFH         LINE#         43
   -------         ENDPROC       _DELAYMS
   -------         PROC          _DELAYS
   D:0005H         SYMBOL        t
-  C:00C7H         LINE#         47
-  C:00C9H         LINE#         48
-  C:00C9H         LINE#         49
-  C:00CFH         LINE#         50
-  C:00CFH         LINE#         51
-  C:00D2H         LINE#         52
-  C:00D2H         LINE#         53
-  C:00D5H         LINE#         54
-  C:00D5H         LINE#         55
-  C:00D8H         LINE#         56
-  C:00DAH         LINE#         57
+  C:00F0H         LINE#         46
+  C:00F2H         LINE#         47
+  C:00F2H         LINE#         48
+  C:00F8H         LINE#         49
+  C:00F8H         LINE#         50
+  C:00FBH         LINE#         51
+  C:00FBH         LINE#         52
+  C:00FEH         LINE#         53
+  C:00FEH         LINE#         54
+  C:0101H         LINE#         55
+  C:0103H         LINE#         56
   -------         ENDPROC       _DELAYS
   -------         PROC          SW1DELAY
-  C:00F1H         LINE#         62
-  C:00F1H         LINE#         63
-  C:00F1H         LINE#         64
-  C:00F3H         LINE#         65
-  C:00F8H         LINE#         66
-  C:00FAH         LINE#         68
+  C:011AH         LINE#         61
+  C:011AH         LINE#         62
+  C:011AH         LINE#         63
+  C:011CH         LINE#         64
+  C:0121H         LINE#         65
+  C:0123H         LINE#         67
   -------         ENDPROC       SW1DELAY
   -------         PROC          SW2DELAY
-  C:00FBH         LINE#         69
-  C:00FBH         LINE#         70
-  C:00FBH         LINE#         71
-  C:00FDH         LINE#         72
-  C:0102H         LINE#         73
-  C:0104H         LINE#         74
+  C:0124H         LINE#         68
+  C:0124H         LINE#         69
+  C:0124H         LINE#         70
+  C:0126H         LINE#         71
+  C:012BH         LINE#         72
+  C:012DH         LINE#         73
   -------         ENDPROC       SW2DELAY
   -------         PROC          ON
-  C:00DBH         LINE#         78
-  C:00DBH         LINE#         79
-  C:00DEH         LINE#         80
-  C:00E1H         LINE#         81
+BL51 BANKED LINKER/LOCATER V5.03                                                      03/21/2020  14:54:59  PAGE 4
+
+
+  C:0104H         LINE#         77
+  C:0104H         LINE#         78
+  C:0107H         LINE#         79
+  C:010AH         LINE#         80
   -------         ENDPROC       ON
   -------         PROC          OFF
-BL51 BANKED LINKER/LOCATER V5.03                                                      03/19/2020  16:06:09  PAGE 4
-
-
-  C:00E6H         LINE#         84
-  C:00E6H         LINE#         85
-  C:00E9H         LINE#         86
-  C:00ECH         LINE#         87
+  C:010FH         LINE#         83
+  C:010FH         LINE#         84
+  C:0112H         LINE#         85
+  C:0115H         LINE#         86
   -------         ENDPROC       OFF
+  -------         PROC          CHECK
+  C:00B5H         LINE#         89
+  C:00B5H         LINE#         90
+  C:00B8H         LINE#         91
+  C:00BDH         LINE#         92
+  C:00C5H         LINE#         94
+  C:00C5H         LINE#         95
+  C:00C8H         LINE#         96
+  C:00CDH         LINE#         97
+  C:00D3H         LINE#         99
+  C:00D3H         LINE#         100
+  -------         ENDPROC       CHECK
   -------         PROC          MAIN
-  C:00ABH         LINE#         90
-  C:00ABH         LINE#         91
-  C:00ABH         LINE#         93
-  C:00ADH         LINE#         94
-  C:00ADH         LINE#         95
-  C:00ADH         LINE#         96
-  C:00B0H         LINE#         97
-  C:00B7H         LINE#         98
-  C:00BAH         LINE#         99
-  C:00BAH         LINE#         101
-  C:00C2H         LINE#         102
-  C:00C5H         LINE#         103
-  C:00C5H         LINE#         106
+  C:008FH         LINE#         102
+  C:008FH         LINE#         103
+  C:008FH         LINE#         105
+  C:0091H         LINE#         106
+  C:0091H         LINE#         107
+  C:0091H         LINE#         108
+  C:0094H         LINE#         109
+  C:009FH         LINE#         110
+  C:00A2H         LINE#         111
+  C:00A2H         LINE#         113
+  C:00B0H         LINE#         114
+  C:00B3H         LINE#         115
+  C:00B3H         LINE#         118
   -------         ENDPROC       MAIN
   -------         ENDMOD        1_ö_ÀÁ___¼ü¿ØÖÆLED
 
-Program Size: data=10.0 xdata=0 code=272
+Program Size: data=10.0 xdata=0 code=313
 LINK/LOCATE RUN COMPLETE.  0 WARNING(S),  0 ERROR(S)

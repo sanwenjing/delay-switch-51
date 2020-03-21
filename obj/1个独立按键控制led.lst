@@ -1,4 +1,4 @@
-C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/19/2020 16:06:08 PAGE 1   
+C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/21/2020 14:54:59 PAGE 1   
 
 
 C51 COMPILER V7.06, COMPILATION OF MODULE 1_鯻懒___键控制LED
@@ -9,125 +9,137 @@ COMPILER INVOKED BY: C:\Keil\C51\BIN\C51.EXE 1个独立按键控制led.c BROWSE DEBUG O
 stmt level    source
 
    1          /*-----------------------------------------------
-   2            名称：单个独立按键检测
-   3            论坛：www.doflye.net
-   4            编写：shifang
-   5            日期：2009.5
-   6            修改：无
-   7            内容：用于时刻检测按键状态并输出指示
-   8          ------------------------------------------------*/
-   9          #include<reg52.h> //包含头文件，一般情况不需要改动，头文件包含特殊功能寄存器的定义
-  10          
-  11          sbit KEY=P2^0;  //定义按键输入端口
-  12          sbit SW1=P2^7;  //定义继电器1
-  13          sbit SW2=P2^6;  //定义继电器2
-  14          unsigned char flag=1;    //定义开关信号,默认为1,首次执行关操作
-  15          sfr WDT_CONTR=0xe1; //看门狗定义
-  16          
-  17          //喂狗
-  18          void Rst_Watchdog( void )
-  19          {
-  20   1              WDT_CONTR=0x35;
-  21   1      }
-  22          
-  23          /*------------------------------------------------
-  24                              主函数
-  25          ------------------------------------------------*/
-  26          void DelayUs2x(unsigned char t)
-  27          {   
-  28   1       while(--t);
-  29   1      }
-  30          /*------------------------------------------------
-  31           mS延时函数，含有输入参数 unsigned char t，无返回值
-  32           unsigned char 是定义无符号字符变量，其值的范围是
-  33           0~255 这里使用晶振12M，精确延时请使用汇编
-  34          ------------------------------------------------*/
-  35          void DelayMs(unsigned char t)
-  36          {
-  37   1           
-  38   1       while(t--)
-  39   1       {
-  40   2           //大致延时1mS
-  41   2           DelayUs2x(245);
-  42   2               DelayUs2x(245);
-  43   2       }
-  44   1      }
-  45          
-  46          //延时一秒
-  47          void DelayS(unsigned char t)
-  48          {
-  49   1       while(t--)
-  50   1        {
-  51   2        Rst_Watchdog();       
+   2            名称：单个独立按键控制继电器延时开关
+   3            编写：sanwenjing
+   4            日期：2020.03
+   5            修改：无
+   6            内容：用于远程控制水泵启停装置
+   7          ------------------------------------------------*/
+   8          #include<reg52.h> //包含头文件，一般情况不需要改动，头文件包含特殊功能寄存器的定义
+   9          
+  10          sbit KEY=P2^0;  //定义按键输入端口
+  11          sbit SW1=P2^7;  //定义继电器1
+  12          sbit SW2=P2^6;  //定义继电器2
+  13          unsigned char flag=1;    //定义开关信号,默认为1,首次执行关操作
+  14          sfr WDT_CONTR=0xe1; //看门狗定义
+  15          
+  16          //喂狗
+  17          void Rst_Watchdog( void )
+  18          {
+  19   1              WDT_CONTR=0x35;
+  20   1      }
+  21          
+  22          /*------------------------------------------------
+  23                              主函数
+  24          ------------------------------------------------*/
+  25          void DelayUs2x(unsigned char t)
+  26          {   
+  27   1       while(--t);
+  28   1      }
+  29          /*------------------------------------------------
+  30           mS延时函数，含有输入参数 unsigned char t，无返回值
+  31           unsigned char 是定义无符号字符变量，其值的范围是
+  32           0~255 这里使用晶振12M，精确延时请使用汇编
+  33          ------------------------------------------------*/
+  34          void DelayMs(unsigned char t)
+  35          {
+  36   1           
+  37   1       while(t--)
+  38   1       {
+  39   2           //大致延时1mS
+  40   2           DelayUs2x(245);
+  41   2               DelayUs2x(245);
+  42   2       }
+  43   1      }
+  44          
+  45          //延时一秒
+  46          void DelayS(unsigned char t)
+  47          {
+  48   1       while(t--)
+  49   1        {
+  50   2        Rst_Watchdog();       
+  51   2         DelayMs(255);
   52   2         DelayMs(255);
   53   2         DelayMs(255);
   54   2         DelayMs(255);
-C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/19/2020 16:06:08 PAGE 2   
+C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/21/2020 14:54:59 PAGE 2   
 
-  55   2         DelayMs(255);
-  56   2        }
-  57   1      }
+  55   2        }
+  56   1      }
+  57          
   58          
   59          
-  60          
-  61          //延时开
-  62          void Sw1Delay()
-  63          {
-  64   1      SW1=0;
-  65   1      DelayS(10);
-  66   1      SW1=1;
-  67   1      
-  68   1      }
-  69          void Sw2Delay()
-  70          {
-  71   1      SW2=0;
-  72   1      DelayS(10);
-  73   1      SW2=1;
-  74   1      }
+  60          //延时开
+  61          void Sw1Delay()
+  62          {
+  63   1      SW1=0;
+  64   1      DelayS(10);
+  65   1      SW1=1;
+  66   1      
+  67   1      }
+  68          void Sw2Delay()
+  69          {
+  70   1      SW2=0;
+  71   1      DelayS(10);
+  72   1      SW2=1;
+  73   1      }
+  74          
   75          
-  76          
-  77          //控制函数
-  78          void ON(){
-  79   1              flag=1;
-  80   1              Sw1Delay();
-  81   1              DelayS(1);
-  82   1      }
-  83          
-  84          void OFF(){
-  85   1              flag=0;
-  86   1              Sw2Delay();
-  87   1              DelayS(1);
-  88   1      }
-  89          
-  90          void main (void)
-  91          {
-  92   1                        
-  93   1      KEY=1; //按键输入端口电平置高
-  94   1      while (1)         //主循环
-  95   1        {
-  96   2              Rst_Watchdog();//喂狗
-  97   2              if( KEY==0 && flag==0 ) {//按下按键时
-  98   3              ON();
-  99   3              }
- 100   2      
- 101   2              if( KEY==1 && flag==1 ) {//放开按键时
- 102   3              OFF();
- 103   3              }
- 104   2      
- 105   2              //while(1);//模拟死机,测试狗是不是正常,正常为不断重启
- 106   2        }
- 107   1      }
+  76          //控制函数
+  77          void ON(){
+  78   1              flag=1;
+  79   1              Sw1Delay();
+  80   1              DelayS(1);
+  81   1      }
+  82          
+  83          void OFF(){
+  84   1              flag=0;
+  85   1              Sw2Delay();
+  86   1              DelayS(1);
+  87   1      }
+  88          
+  89          check(){
+  90   1              if( KEY==1 ){
+  91   2                      DelayMs(20);    //去抖
+  92   2                      if( KEY==1 ) return 1;
+  93   2                      
+  94   2              }
+  95   1              else if( KEY==0 ){
+  96   2                      DelayMs(20);    //去抖
+  97   2                      if( KEY==0 ) return 0;
+  98   2                      
+  99   2              }
+ 100   1      }
+ 101          
+ 102          void main (void)
+ 103          {
+ 104   1                        
+ 105   1      KEY=1; //按键输入端口电平置高
+ 106   1      while (1)         //主循环
+ 107   1        {
+ 108   2              Rst_Watchdog();//喂狗
+ 109   2              if( check()==0 && flag==0 )     {//按下按键时
+ 110   3              ON();
+ 111   3              }
+ 112   2      
+ 113   2              if( check()==1 && flag==1 )     {//放开按键时
+ 114   3              OFF();
+ 115   3              }
+ 116   2      
+C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/21/2020 14:54:59 PAGE 3   
+
+ 117   2              //while(1);//模拟死机,测试狗是不是正常,正常为不断重启
+ 118   2        }
+ 119   1      }
 
 
 MODULE INFORMATION:   STATIC OVERLAYABLE
-   CODE SIZE        =    125    ----
+   CODE SIZE        =    166    ----
    CONSTANT SIZE    =   ----    ----
    XDATA SIZE       =   ----    ----
    PDATA SIZE       =   ----    ----
    DATA SIZE        =      1    ----
    IDATA SIZE       =   ----    ----
-C51 COMPILER V7.06   1_鯻懒___键控制LED                                                    03/19/2020 16:06:08 PAGE 3   
-
    BIT SIZE         =   ----    ----
 END OF MODULE INFORMATION.
 
